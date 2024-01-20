@@ -14,7 +14,7 @@ class SampleProvider extends BaseProvider {
   Future<void> changeText() async {
     _myText = 'first change';
     notifyListeners();
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
     _myText = 'second change';
     notifyListeners();
   }
